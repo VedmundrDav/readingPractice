@@ -7,6 +7,7 @@ function randomRgbaString (alpha) {
   }
 
 var letters = 'ABCDEFGHIJKLMNOPQRSTUVXXYZabcdefghijklmnopqrstuvwxyz';
+var words = []; 
 
 document.addEventListener('keypress', function(e){
     if(e.keyCode == 32){
