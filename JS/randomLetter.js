@@ -1,5 +1,3 @@
-alert("Tap the scren or press the space bar!");
-
 function randomRgbaString (alpha) {
     let r = Math.floor(Math.random() * 255)
     let g = Math.floor(Math.random() * 255)
@@ -8,16 +6,18 @@ function randomRgbaString (alpha) {
     return `rgba(${r},${g},${b},${a})`
   }
 
-
 var letters = 'ABCDEFGHIJKLMNOPQRSTUVXXYZabcdefghijklmnopqrstuvwxyz';
-document.onkeyup = function(e){
+
+document.addEventListener('keypress', function(e){
     if(e.keyCode == 32){
+        document.getElementById('header').style.opacity= 0;
         document.getElementById('letter').innerHTML = letters[Math.floor(Math.random() * letters.length)];
         document.body.style.background = randomRgbaString(1);
     }
-}
+});
 
 document.addEventListener('touchend', function(){
+    document.getElementById('header').style.opacity= 0;
     document.getElementById('letter').innerHTML = letters[Math.floor(Math.random() * letters.length)];
     document.body.style.background = randomRgbaString(1);
 });
