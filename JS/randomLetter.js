@@ -1,7 +1,7 @@
+//JAVA START
+var words = ["Am", "The", "White", "Blue", "Black", "Pink", "Purple", "Green", "Gray", "Three", "Five"]; 
+//JAVA END
 const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
-//do NOT change the format of the variable words. I use a java app to add/delete entries.
-var words = ["Am", "The", "White", "Blue", "Black", "Pink", "Purple","Green", "Gray", "Three", "Five"]; 
-
 
 function randomRgbaString (alpha) {
     let r = Math.floor(Math.random() * 255)
