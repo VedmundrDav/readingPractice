@@ -1,5 +1,5 @@
 //JAVA START
-var words = ["Am", "The", "White", "Blue", "Black", "Pink", "Purple", "Green", "Gray", "Three", "Five"]; 
+var words = ["Am", "The", "White", "Blue", "Black", "Pink", "Purple", "Green", "Gray", "Three", "Five", "Three", "Four", "Five", "a", "To", "Brown", "Orange", "Little", "One", "Zero", "Two", "Red", "I", "Yellow"];
 //JAVA END
 const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
 
@@ -51,6 +51,3 @@ document.getElementById('main-content').addEventListener('touchend', function(){
      document.body.style.background = randomRgbaString(1);
     }
 });
-
-
-
