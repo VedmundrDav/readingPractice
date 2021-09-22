@@ -23,6 +23,7 @@ function toggleAlphabet(){
 
 }
 
+var count = 0;
 document.addEventListener('keyup', function(e){
     var btn = document.getElementById('toggle-btn');
     if(e.key === ' '){
@@ -32,8 +33,12 @@ document.addEventListener('keyup', function(e){
             document.body.style.background = randomRgbaString(1);
         }else{
             document.getElementById('header').style.opacity= 0;
-            document.getElementById('letter').innerHTML = words[Math.floor(Math.random() * words.length)];
-            document.body.style.background = randomRgbaString(1);            
+            document.getElementById('letter').innerHTML = words[count];
+            document.body.style.background = randomRgbaString(1);
+            count++;
+            if(count === words.length){
+                count=0;
+            }            
         }
     }
 });
@@ -46,8 +51,12 @@ document.getElementById('main-content').addEventListener('touchend', function(){
         document.getElementById('letter').innerHTML = letters[Math.floor(Math.random() * letters.length)];
         document.body.style.background = randomRgbaString(1);
     }else{
-    document.getElementById('header').style.opacity= 0;
-     document.getElementById('letter').innerHTML = words[Math.floor(Math.random() * words.length)];
-     document.body.style.background = randomRgbaString(1);
+        document.getElementById('header').style.opacity= 0;
+        document.getElementById('letter').innerHTML = words[count];
+        document.body.style.background = randomRgbaString(1);
+        count++;
+        if(count === words.length){
+            count=0;
+        }
     }
 });
