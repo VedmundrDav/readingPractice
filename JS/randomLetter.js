@@ -1,5 +1,5 @@
 //JAVA START
-var words = ["Am", "The", "White", "Blue", "Black", "Pink", "Purple", "Green", "Gray", "Three", "Five", "Three", "Four", "Five", "a", "To", "Brown", "Orange", "Little", "One", "Zero", "Two", "Red", "I", "Yellow"];
+var words = ["Am", "The", "White", "Blue", "Black", "Pink", "Purple", "Green", "Gray", "Three", "Five", "Three", "Four", "Five", "a", "To", "Brown", "Orange", "Little", "One", "Zero", "Two", "Red", "I", "Yellow", "Six", "Seven", "Eight", "Nine", "Ten", "have", "is"];
 //JAVA END
 const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
 
